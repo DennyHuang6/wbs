@@ -18,8 +18,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.util.HtmlUtils;
 
-import com.xnpe.club.wbs.data.Greeting;
-import com.xnpe.club.wbs.data.HelloMessage;
+import com.messagingstompwebsocket.Vo.Greeting;
+import com.messagingstompwebsocket.Vo.HelloMessage;
+
 
 @Controller
 /****************************************************

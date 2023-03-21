@@ -3,14 +3,11 @@ package com.messagingstompwebsocket.Service;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
 
-import com.xnpe.club.wbs.data.Greeting;
-import com.xnpe.club.wbs.data.HelloMessage;
+import com.messagingstompwebsocket.Vo.HelloMessage;
+
 
 @Service
 public class ScheduledPushMessages {
