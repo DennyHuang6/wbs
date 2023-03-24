@@ -2,12 +2,21 @@ spring:
   kafka:
     bootstrap-servers: localhost:9092
     #bootstrap-servers: localhost:9092
-app:
-  topic:
-    foo: foo.t
 
 logging:
-  level:
-    root: ERROR
-    org.springframework.web: ERROR
-    com.yiibai: DEBUG
+   pattern:
+#      console: "\u001b[0;31m xxxx \u001b[m %n" #使用顏色碼 
+#      console: '%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){cyan} %-5level-%clr([%t]){cyan} %m %n' #自訂log4j pattern
+      console: '%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level-[%t] %m%n' #自訂log4j pattern
+   file:
+      name: ../../springboot_log-dev.log
+   level:
+      com:
+         asi: 
+            huanan: 
+               controller: DEBUG
+               service: DEBUG
+            mechanism: DEBUG
+         #asi: INFO
+      org:
+         springframework: DEBUG
