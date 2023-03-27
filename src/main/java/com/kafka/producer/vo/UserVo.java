@@ -6,6 +6,10 @@ public class UserVo {
     private String dpt;
     
     
+	public UserVo() {
+
+	}
+	
 	public String getId() {
 		return id;
 	}
