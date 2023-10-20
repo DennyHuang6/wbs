@@ -1,5 +1,6 @@
   
-
+server:
+  port: 8081
 logging:
    pattern:
 #      console: "\u001b[0;31m xxxx \u001b[m %n" #使用顏色碼 
